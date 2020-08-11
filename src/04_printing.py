@@ -16,7 +16,7 @@ print("x is %d,y is %.2f,z is %s" %(x,y,z))
 
 # Use the 'format' string method to print the same thing
 
-text = " x is {x},y is {y}, z is {z} ".format(x= 10, y = 2.25, z = "I like turtles!")
+text = "x is {x},y is {y},z is {z} ".format(x= 10, y = 2.25, z = "I like turtles!")
 print(text)
 
 # Finally, print the same thing using an f-string
