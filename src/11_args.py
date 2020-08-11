@@ -56,9 +56,8 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
-def f4(**dave):
-    for key, val in dave.items():
-        print(f"key: {key}, value: {val}")
+def f4(*a, **b):
+    print(f"{a}: {b}")
 
 # Should print
 # key: a, value: 12
