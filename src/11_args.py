@@ -19,8 +19,10 @@ print(f1(1, 2))
 def f2(*args):
     v = 0
     for arg in args:
+        
         v += arg
-        return v
+    
+    return v
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -56,8 +58,9 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
-def f4(*a, **b):
-    print(f"{a}: {b}")
+def f4(**kwargs):
+    for k, v in kwargs.items():
+        print(f"key: {k}, value: {v}")
 
 # Should print
 # key: a, value: 12
